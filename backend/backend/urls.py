@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from rest_framework.routers import DefaultRouter
-from posts.views import PostViewSet
+from posts.views import PostViewSet, auth_ping
 
 router = DefaultRouter()
 router.register('posts', PostViewSet)
@@ -28,4 +28,5 @@ router.register('posts', PostViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('api/auth/ping/', auth_ping),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
