@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/barry/Documents/Final-Year/DCU-athletics-site/dcu-athletics/src/app/news/loading.tsx"],"sourcesContent":["import { SkeletonCard } from \"../../components/Skeletons\";\n\nexport default function NewsLoading() {\n\treturn (\n\t\t<div className=\"space-y-6\" aria-busy=\"true\" aria-live=\"polite\">\n\t\t\t<SkeletonCard />\n\t\t\t<SkeletonCard />\n\t\t</div>\n\t);\n}\n\n\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACvB,qBACC,8OAAC;QAAI,WAAU;QAAY,aAAU;QAAO,aAAU;;0BACrD,8OAAC,+IAAY;;;;;0BACb,8OAAC,+IAAY;;;;;;;;;;;AAGhB","debugId":null}}]
+}
